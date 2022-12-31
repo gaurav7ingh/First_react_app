@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+}
+
+.logo {
+    font-family: "Roboto";
+    font-size: 40px;
+    background-color: aqua;
+    text-align: center;
+}
