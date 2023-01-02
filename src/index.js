@@ -14,10 +14,12 @@ class App extends Component {
 
     render() {
 
+        const {person} = this.state;
+
         return <>
             <Header />
             <NameList
-                name={this.state.person}
+                name={person}
             />
         </>;
 

@@ -1,9 +1,9 @@
 import React from "react";
 import PerPerson from "./per_person";
 
-const nameList = (props) => {
+const nameList = ({name}) => {
 
-    const person = props.name.map((each) => (
+    const person = name.map((each) => (
         <PerPerson
             person={each}
             key={each.id}

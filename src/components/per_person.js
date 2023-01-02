@@ -1,9 +1,9 @@
 import React from 'react';
 
 
-const perPerson = (props) => {
+const perPerson = ({person}) => {
     return <div>
-        <h3>Name : {props.person.firstName + " " + props.person.lastName}</h3>
+        <h3>Name : {person.firstName + " " + person.lastName}</h3>
     </div>
 }
 
