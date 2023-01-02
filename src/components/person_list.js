@@ -1,14 +1,13 @@
 import React from "react";
+import PerPerson from "./per_person";
 
 const nameList = (props) => {
 
-    console.log(props);
-
     const person = props.name.map((each) => (
-        <div key={each.id}>
-            <h3>First Name : {each.firstName}</h3>
-            <h4>Last Name : {each.lastName}</h4>
-        </div>
+        <PerPerson
+            person={each}
+            key={each.id}
+        />
     ))
 
     return <>

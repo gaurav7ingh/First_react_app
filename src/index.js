@@ -4,7 +4,7 @@ import './styles/style.css';
 import JSON from "./styles/db.json";
 
 import Header from './components/header';
-import NameList from './components/news_list';
+import NameList from './components/person_list';
 
 class App extends Component {
 
