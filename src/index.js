@@ -9,17 +9,31 @@ import NameList from './components/person_list';
 class App extends Component {
 
     state = {
-        person: JSON
+        person: JSON,
+        filetred : JSON
+    }
+
+    getKeywords = (event) => {
+        const value = event.target.value;
+        let filetredItem = this.state.person.filter((each) => {
+            return each.firstName.indexOf(value) > -1;
+        })
+
+        this.setState({
+            filetred : filetredItem
+        })
     }
 
     render() {
 
-        const {person} = this.state;
+        const { filetred } = this.state;
 
         return <>
-            <Header />
+            <Header 
+                keyword = {this.getKeywords}    
+            />
             <NameList
-                name={person}
+                name={filetred}
             />
         </>;
 

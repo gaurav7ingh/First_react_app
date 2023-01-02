@@ -2,9 +2,13 @@ body {
     margin: 0;
 }
 
-.logo {
+.active {
     font-family: "Roboto";
     font-size: 40px;
-    background-color: aqua;
     text-align: center;
+    background-color: red;
+}
+
+.not-active {
+    background-color: aquamarine;
 }
